@@ -50,6 +50,9 @@ public class Listas {
 		for (String pessoa : result) {
 			System.out.println(pessoa);
 		}
+		// filtrando o primeiro elemento com N
+		String name = list.stream().filter(x -> x.charAt(0) == 'N').findFirst().orElse(null);	
+		System.out.println(name);
 		
 		System.out.println("Index of Natanael: " + list.indexOf("Natanael"));
 		System.out.println("Index of Albert (usuário inexistente): " + list.indexOf("Albert"));
